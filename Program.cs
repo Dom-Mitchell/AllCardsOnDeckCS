@@ -170,8 +170,11 @@ namespace AllCardsOnDeckCS
             // Test Case
             foreach (var shuffledCard in deck)
             {
-                Console.WriteLine($"{shuffledCard}");
+                //Console.WriteLine($"{shuffledCard}");
             }
+
+            // Print out the first 2 cards from the deck
+            Console.WriteLine($"\nFirst card is {deck[0]} and second card is {deck[1]}");
 
             // Test Cases
             //DeckCreation();
