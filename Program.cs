@@ -142,8 +142,18 @@ namespace AllCardsOnDeckCS
             // Variable used to shuffle cards
             var deck = ShuffleDeck();
 
-            // Call methods to determine first 2 cards & deal cards
-            FirstTwoCards(deck);
+            // Ask user if they want to know the first two cards in deck
+            Console.WriteLine("Would you like to know the first 2 cards in the deck? (Yes/No)");
+            var answer = Console.ReadLine();
+
+            // Logic to determine if user typed yes to previous question
+            if (answer == "Yes" || answer == "yes" || answer == "y")
+            {
+                // Call method to determine first 2 cards in deck
+                FirstTwoCards(deck);
+            }
+
+            // Call method to deal cards
             DealCards(deck);
         }
     }
